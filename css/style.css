@@ -7688,4 +7688,56 @@ button.close {
   }
 }
 
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+nav.navbar {
+  border-radius: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+nav.navbar a.navbar-brand {
+  font-size: inherit;
+  color: #fcffff;
+}
+
+nav.navbar div.visible-xs {
+  padding: 15px;
+}
+
+nav.navbar div.visible-xs p, nav.navbar div.visible-xs span {
+  color: #9d9d9d;
+  text-transform: none;
+}
+
+section.main {
+  background-color: #0c9fb3;
+  padding: 45px 15px;
+  color: #eee;
+}
+
+section.main div {
+  width: 250px;
+}
+
+section.main div h1 {
+  font-size: 2.5rem;
+}
+
+section.main div p {
+  color: #a9cadb;
+  font-size: 1.5rem;
+}
+
+section.second div:first-child {
+  background-color: #242129;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

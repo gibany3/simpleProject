@@ -1,0 +1,53 @@
+//*{
+//  outline: 1px solid red;
+//}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: $primaryFont;
+  font-size: 1.6rem;
+}
+//p, h1 {
+//  margin: 0;
+//}
+nav.navbar {
+  border-radius: 0;
+  margin: 0;
+  text-transform: uppercase;
+  a.navbar-brand {
+    font-size: inherit;
+    color: #fcffff;
+  }
+  div.visible-xs {
+    padding: 15px;
+    p, span {
+      color: #9d9d9d;
+      text-transform: none;
+    }
+  }
+}
+section.main {
+  background-color: #0c9fb3;
+  padding: 45px 15px;
+  color: #eee;
+  div {
+    width: 250px;
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      color: #a9cadb;
+      font-size: 1.5rem;
+    }
+    //span {
+    //  float: right;
+    //}
+  }
+}
+
+section.second {
+  div:first-child {
+    background-color: #242129;
+  }
+}
