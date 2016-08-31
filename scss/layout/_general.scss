@@ -6,6 +6,12 @@ html {
   @include breakpoint(md) {
     font-size: 8px;
   }
+  @include breakpoint(sm) {
+    font-size: 6px;
+  }
+  @include breakpoint(sm) {
+    font-size: 4px;
+  }
 }
 
 body {
@@ -13,17 +19,54 @@ body {
   font-size: 1.6rem;
 }
 
-p {
-  margin: 0;
+a {
+  color: inherit;
+
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
 }
+
+.nopadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0 !important;
+}
+
 nav.pgs-navbar {
   margin: 0;
   border-radius: 0;
-  color: #9d9d9d;
+  color: #cdcdcd;
   border: none;
-  padding: 25px 0;
-  ul li {
-    text-transform: uppercase;
+  div.visible-md
+  ul {
+    padding: 25px 0;
+    li {
+      text-transform: uppercase;
+      & > a {
+        color: #cdcdcd;
+      }
+    }
+  }
+}
+
+.bg-nav {
+  background-color: #363d3d;
+}
+
+.hidden-menu {
+  font-size: 3rem;
+  div {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .resize-panel {
+    width: calc(100% - 80px);
+  }
+  .pgs-bg {
+    width: 80px;
+    background-color: #000;
   }
 }
 
@@ -31,37 +74,120 @@ nav.pgs-navbar {
   background-color: #0c9fb3;
   color: #eee;
   padding: 120px 0;
-  h1 {
-    font-size: 6rem;
-    font-weight: 700;
-    margin: 0;
+  @include breakpoint(sm) {
+    padding: 70px 0;
   }
-  p {
-    color: #a9cadb;
-    font-size: 2.5rem;
-    margin-top: 30px;
+  .main {
+    width: 620px;
+    @include breakpoint(md) {
+      width: 490px;
+    }
+    @include breakpoint(sm) {
+      width: 370px;
+    }
+    @include breakpoint(sm) {
+      width: 245px;
+    }
+    h1 {
+      font-size: 6rem;
+      font-weight: 700;
+      margin: 0;
+    }
+    p {
+      color: #a9cadb;
+      font-size: 2.5rem;
+      margin-top: 30px;
+    }
   }
 }
 
 .pgs-third {
   font-size: 2.8rem;
+  @include breakpoint(xs) {
+    font-size: 1.8rem;
+  }
   .text-block {
     background-color: #242129;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #8d8396;
     width: calc(100% - 136px);
-    .container {
-
+    @include breakpoint(sm) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: calc(100% - 82px);
+    }
+    @include breakpoint(xs) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: calc(100% - 72px);
     }
   }
-  .pgs-arrow {
-    width: 136px;
-    background-color: #ba3282;
-    padding: 50px 0;
-    text-align: center;
-    color: #eee;
-    display: inline-block;
+  a {
+    &:hover {
+      .pgs-arrow {
+        background-color: #e232aa;
+      }
+    }
+    .pgs-arrow {
+      width: 136px;
+      background-color: #ba3282;
+      padding: 50px 0;
+      color: #eee;
+      display: inline-block;
+      @include breakpoint(sm) {
+        width: 82px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      @include breakpoint(xs) {
+        width: 72px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
   }
 }
 
+.first-img-block {
+  .arrow-img {
+    background-color: #57109e;
+    position: relative;
+    @include breakpoint(sm) {
+      font-size: 3rem;
+    }
+    span {
+      position: absolute;
+      color: #eee;
+      font-size: 3rem;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.last-section {
+  background-color: #ebebeb;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  h2 {
+    color: #29879e;
+    font-weight: 700;
+    a:hover {
+      color: #2abad1;
+    }
+  }
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #575757;
+    @include breakpoint(sm) {
+      font-size: 3rem;
+    }
+    @include breakpoint(xs) {
+      font-size: 3rem;
+    }
+  }
+}
