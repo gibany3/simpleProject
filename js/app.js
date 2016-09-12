@@ -1,6 +1,7 @@
 $(document).ready(function () {
     setHeightOnLoad();
     window.addEventListener('resize', resizeFunction);
+    addition();
 });
 
 
@@ -35,6 +36,22 @@ function debounce(func, wait, immediate) {
         if (callNow) func.apply(context, args);
     };
 }
+
+//modal Addition
+function addition() {
+    var num1 = $("#num1");
+    var num2 = $("#num2");
+    var res = $("#res");
+    var button = $("#btnRes");
+
+    button.click(function () {
+        res.val(parseInt(num1.val()) + parseInt(num2.val()));
+    });
+}
+
+//lightbox
+
+
 
 
 // var myFeature = {
