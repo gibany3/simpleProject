@@ -1,7 +1,13 @@
 $(document).ready(function () {
     setHeightOnLoad();
-    window.addEventListener('resize', resizeFunction);
+    $(window).resize(resizeFunction);
     addition();
+
+
+    //lightbox option
+    lightbox.option({
+        'wrapAround': true
+    });
 });
 
 
@@ -48,10 +54,6 @@ function addition() {
         res.val(parseInt(num1.val()) + parseInt(num2.val()));
     });
 }
-
-//lightbox
-
-
 
 
 // var myFeature = {
