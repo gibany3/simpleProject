@@ -7879,6 +7879,11 @@ nav.pgs-navbar div.visible-md ul li > a {
   }
 }
 
+.modal-content {
+  background-color: #dadada;
+  border-radius: 0;
+}
+
 .first-img-block .arrow-img {
   background-color: #57109e;
   position: relative;

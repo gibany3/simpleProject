@@ -1,6 +1,13 @@
 $(document).ready(function () {
     setHeightOnLoad();
-    window.addEventListener('resize', resizeFunction);
+    $(window).resize(resizeFunction);
+    addition();
+
+
+    //lightbox option
+    lightbox.option({
+        'wrapAround': true
+    });
 });
 
 
@@ -34,6 +41,18 @@ function debounce(func, wait, immediate) {
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
     };
+}
+
+//modal Addition
+function addition() {
+    var num1 = $("#num1");
+    var num2 = $("#num2");
+    var res = $("#res");
+    var button = $("#btnRes");
+
+    button.click(function () {
+        res.val(parseInt(num1.val()) + parseInt(num2.val()));
+    });
 }
 
 
