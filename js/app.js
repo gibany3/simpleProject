@@ -3,24 +3,54 @@ $(document).ready(function () {
     $(window).resize(resizeFunction);
     addition();
 
-
     //lightbox option
     lightbox.option({
         'wrapAround': true
     });
+
+
+    // $(".left").click(function () {
+    //     setSliderHeight();
+    // });
+    //
+    // $(".right").click(function () {
+    //     setSliderHeight();
+    // });
+
 });
+
+
+function setSliderHeight() {
+    var slideImgFirst = $(".item").find("img");
+    //var slideImgSecond = $(".item").find("img");
+    var mainSlideEl = $(".pgs-second");
+
+    mainSlideEl.height(slideImgFirst[0].height);
+
+
+    // if (slideImgFirst.parent()[0].hasClass("active")) {
+    //     console.log("First element")
+    //     mainSlideEl.height(slideImgFirst.height);
+    // } else if (slideImgFirst.parent()[1].hasClass("active")) {
+    //     console.log("Second Element")
+    //     mainSlideEl.height(slideImgSecond.height);
+    // }
+}
 
 
 function setHeightOnLoad() {
 
+    setSliderHeight();
+
+    //three images side by side
     var arrowSpan = $(".arrow-img");
     var imgHeight = $(".first-img-block").find("img").eq(0).height();
     var halfSize = $(((imgHeight) / 2) - 15)[0];
 
+
     arrowSpan.height(imgHeight);
     arrowSpan.find("span").css("top", halfSize);
 }
-
 
 var resizeFunction = debounce(function () {
     // All the taxing stuff you do
