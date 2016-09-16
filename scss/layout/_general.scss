@@ -73,17 +73,17 @@ nav.pgs-navbar {
 .pgs-second {
   background-color: #0c9fb3;
   color: #eee;
-  padding: 120px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  //padding: 120px 15px;
   @include breakpoint(sm) {
-    padding: 70px 0;
+    //padding: 70px 15px;
   }
   .main {
     width: 620px;
     @include breakpoint(md) {
       width: 490px;
-    }
-    @include breakpoint(sm) {
-      width: 370px;
     }
     @include breakpoint(sm) {
       width: 245px;
@@ -148,6 +148,10 @@ nav.pgs-navbar {
     }
   }
 }
+.modal-content {
+  background-color: #dadada;
+  border-radius: 0;
+}
 
 .first-img-block {
   .arrow-img {
@@ -172,6 +176,12 @@ nav.pgs-navbar {
   background-color: #ebebeb;
   padding-top: 15px;
   padding-bottom: 15px;
+  min-height: 400px;
+  a{
+    &:hover {
+      color: #57109e;
+    }
+  }
   h2 {
     color: #29879e;
     font-weight: 700;
@@ -189,5 +199,11 @@ nav.pgs-navbar {
     @include breakpoint(xs) {
       font-size: 3rem;
     }
+  }
+}
+
+.nav-tabs {
+  @include breakpoint(sm) {
+    font-size: 3.5rem;
   }
 }

@@ -7774,13 +7774,9 @@ nav.pgs-navbar div.visible-md ul li > a {
 .pgs-second {
   background-color: #0c9fb3;
   color: #eee;
-  padding: 120px 0;
-}
-
-@media only screen and (max-width: 640px) {
-  .pgs-second {
-    padding: 70px 0;
-  }
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 
 .pgs-second .main {
@@ -7790,12 +7786,6 @@ nav.pgs-navbar div.visible-md ul li > a {
 @media only screen and (max-width: 980px) {
   .pgs-second .main {
     width: 490px;
-  }
-}
-
-@media only screen and (max-width: 640px) {
-  .pgs-second .main {
-    width: 370px;
   }
 }
 
@@ -7879,6 +7869,11 @@ nav.pgs-navbar div.visible-md ul li > a {
   }
 }
 
+.modal-content {
+  background-color: #dadada;
+  border-radius: 0;
+}
+
 .first-img-block .arrow-img {
   background-color: #57109e;
   position: relative;
@@ -7905,6 +7900,11 @@ nav.pgs-navbar div.visible-md ul li > a {
   background-color: #ebebeb;
   padding-top: 15px;
   padding-bottom: 15px;
+  min-height: 400px;
+}
+
+.last-section a:hover {
+  color: #57109e;
 }
 
 .last-section h2 {
@@ -7931,6 +7931,12 @@ nav.pgs-navbar div.visible-md ul li > a {
 @media only screen and (max-width: 320px) {
   .last-section p {
     font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-tabs {
+    font-size: 3.5rem;
   }
 }
 
