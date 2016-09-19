@@ -211,4 +211,14 @@ nav.pgs-navbar {
   background-color: #dedede;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  label {
+    @include breakpoint(sm) {
+      font-size: 3.5rem;
+    }
+  }
+  textarea {
+    resize: none;
+  }
 }

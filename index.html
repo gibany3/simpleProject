@@ -12,7 +12,6 @@
     <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
             integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 </head>
 
@@ -290,51 +289,46 @@
     </section>
 
     <section class="row formSection">
-        <div class="col-xs-8">
-            <form class="form-horizontal">
+        <div class="col-xs-11 col-sm-10 col-md-6">
+            <form class="form-horizontal" id="commentForm">
+
                 <div class="form-group">
+                    <h1 class="text-center">Contact us</h1>
                     <label for="name" class="col-sm-2 control-label">Name</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name"
-                               value="">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" minlength="5" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" name="email"
-                               placeholder="example@domain.com" value="">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Message</label>
                     <div class="col-sm-10">
-                        <textarea class="form-control" rows="4" name="message"></textarea>
+                        <textarea class="form-control" rows="3" name="message" required></textarea>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                    </div>
-                </div>
+
                 <div class="form-group">
                     <div class="col-sm-10 col-sm-offset-2">
                         <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-10 col-sm-offset-2">
-                        <! Will be used to display an alert to the user>
-                    </div>
-                </div>
+
             </form>
         </div>
-
     </section>
 
 </div>
+
 <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
+<script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
+<script src="node_modules/jquery-validation/dist/localization/messages_pl.js"></script>
 <script src="js/app.js"></script>
 </body>
 

@@ -7944,6 +7944,22 @@ nav.pgs-navbar div.visible-md ul li > a {
   background-color: #dedede;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .formSection label {
+    font-size: 3.5rem;
+  }
+}
+
+.formSection textarea {
+  resize: none;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

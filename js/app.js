@@ -2,39 +2,35 @@ $(document).ready(function () {
     setHeightOnLoad();
     $(window).resize(resizeFunction);
     addition();
+    $("#commentForm").validate({
+
+
+
+
+
+
+
+
+
+    });
 
     //lightbox option
     lightbox.option({
         'wrapAround': true
     });
 
-
-    // $(".left").click(function () {
-    //     setSliderHeight();
-    // });
-    //
-    // $(".right").click(function () {
-    //     setSliderHeight();
-    // });
-
 });
+
+//Validate contact form
+
 
 
 function setSliderHeight() {
     var slideImgFirst = $(".item").find("img");
-    //var slideImgSecond = $(".item").find("img");
     var mainSlideEl = $(".pgs-second");
 
     mainSlideEl.height(slideImgFirst[0].height);
 
-
-    // if (slideImgFirst.parent()[0].hasClass("active")) {
-    //     console.log("First element")
-    //     mainSlideEl.height(slideImgFirst.height);
-    // } else if (slideImgFirst.parent()[1].hasClass("active")) {
-    //     console.log("Second Element")
-    //     mainSlideEl.height(slideImgSecond.height);
-    // }
 }
 
 
