@@ -76,6 +76,8 @@ nav.pgs-navbar {
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   //padding: 120px 15px;
   @include breakpoint(sm) {
     //padding: 70px 15px;
@@ -148,6 +150,7 @@ nav.pgs-navbar {
     }
   }
 }
+
 .modal-content {
   background-color: #dadada;
   border-radius: 0;
@@ -177,7 +180,7 @@ nav.pgs-navbar {
   padding-top: 15px;
   padding-bottom: 15px;
   min-height: 400px;
-  a{
+  a {
     &:hover {
       color: #57109e;
     }
@@ -207,17 +210,18 @@ nav.pgs-navbar {
     font-size: 3.5rem;
   }
 }
+
 .maps {
   //padding: 30px 0;
   iframe {
-    width:100%;
-    height:450px;
+    width: 100%;
+    height: 450px;
     //@include breakpoint(sm) {
     //  width:450px;
     //  height:300px;
     //}
     @include breakpoint(xs) {
-      height:300px;
+      height: 300px;
     }
   }
 }
