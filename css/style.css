@@ -7777,6 +7777,12 @@ nav.pgs-navbar div.visible-md ul li > a {
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pgs-second .main {
@@ -7937,6 +7943,17 @@ nav.pgs-navbar div.visible-md ul li > a {
 @media only screen and (max-width: 640px) {
   .nav-tabs {
     font-size: 3.5rem;
+  }
+}
+
+.maps iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media only screen and (max-width: 320px) {
+  .maps iframe {
+    height: 300px;
   }
 }
 

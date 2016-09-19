@@ -1,40 +1,60 @@
 $(document).ready(function () {
     setHeightOnLoad();
-    $(window).resize(resizeFunction);
     addition();
+    $(window).resize(resizeFunction);
 
     //lightbox option
     lightbox.option({
         'wrapAround': true
     });
-
-
-    // $(".left").click(function () {
-    //     setSliderHeight();
-    // });
-    //
-    // $(".right").click(function () {
-    //     setSliderHeight();
-    // });
-
 });
 
+function initMap() {
+    var styleArray = [
+        {
+            featureType: "all",
+            stylers: [
+                { saturation: -80 }
+            ]
+        },{
+            featureType: "road.arterial",
+            elementType: "geometry",
+            stylers: [
+                { hue: "#00ffee" },
+                { saturation: 50 }
+            ]
+        },{
+            featureType: "poi.business",
+            elementType: "labels",
+            stylers: [
+                { visibility: "off" }
+            ]
+        }
+    ];
+
+    var mapCanvas = document.getElementById("map");
+    var map = new google.maps.LatLng(50.049414, 22.008977)
+    var mapOptions = {
+        center: map,
+        styles: styleArray,
+        scrollwheel: false,
+        zoom: 17
+    };
+    var myLatLng = {lat: 50.049208, lng: 22.008945};
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'PGS Software'
+    });
+
+}
 
 function setSliderHeight() {
     var slideImgFirst = $(".item").find("img");
-    //var slideImgSecond = $(".item").find("img");
     var mainSlideEl = $(".pgs-second");
 
     mainSlideEl.height(slideImgFirst[0].height);
-
-
-    // if (slideImgFirst.parent()[0].hasClass("active")) {
-    //     console.log("First element")
-    //     mainSlideEl.height(slideImgFirst.height);
-    // } else if (slideImgFirst.parent()[1].hasClass("active")) {
-    //     console.log("Second Element")
-    //     mainSlideEl.height(slideImgSecond.height);
-    // }
 }
 
 
