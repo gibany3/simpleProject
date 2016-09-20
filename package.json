@@ -25,6 +25,7 @@
     "gulp-bootstrap-configurator": "0.3.3",
     "gulp-sass": "2.3.2",
     "gulp-sourcemaps": "1.6.0",
+    "jquery-validation": "^1.15.1",
     "lightbox2": "2.8.2"
   }
 }

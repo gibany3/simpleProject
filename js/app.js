@@ -3,31 +3,51 @@ $(document).ready(function () {
     addition();
     $(window).resize(resizeFunction);
 
+    //Validate form
+    $("#commentForm").validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 5
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            }
+        }
+    });
+
     //lightbox option
     lightbox.option({
         'wrapAround': true
     });
+
 });
 
+
+//GoogleMaps
 function initMap() {
     var styleArray = [
         {
             featureType: "all",
             stylers: [
-                { saturation: -80 }
+                {saturation: -80}
             ]
-        },{
+        }, {
             featureType: "road.arterial",
             elementType: "geometry",
             stylers: [
-                { hue: "#00ffee" },
-                { saturation: 50 }
+                {hue: "#00ffee"},
+                {saturation: 50}
             ]
-        },{
+        }, {
             featureType: "poi.business",
             elementType: "labels",
             stylers: [
-                { visibility: "off" }
+                {visibility: "off"}
             ]
         }
     ];
@@ -47,9 +67,10 @@ function initMap() {
         map: map,
         title: 'PGS Software'
     });
-
 }
 
+
+//Set slider height
 function setSliderHeight() {
     var slideImgFirst = $(".item").find("img");
     var mainSlideEl = $(".pgs-second");
@@ -57,7 +78,7 @@ function setSliderHeight() {
     mainSlideEl.height(slideImgFirst[0].height);
 }
 
-
+//Set slider height onLoad
 function setHeightOnLoad() {
 
     setSliderHeight();
@@ -78,6 +99,7 @@ var resizeFunction = debounce(function () {
 }, 250);
 
 
+//Function optimization of browser/resize
 function debounce(func, wait, immediate) {
     var timeout;
     return function () {
