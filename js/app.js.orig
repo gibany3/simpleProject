@@ -1,21 +1,36 @@
 $(document).ready(function () {
     setHeightOnLoad();
     addition();
-
-    //Validate form
+<<<<<<< HEAD
     $("#commentForm").validate({
 
+
+
+
+
+
+
+
+
     });
+=======
+    $(window).resize(resizeFunction);
+>>>>>>> master
 
     //lightbox option
     lightbox.option({
         'wrapAround': true
     });
+<<<<<<< HEAD
 
 });
 
+//Validate contact form
 
-//GoogleMaps
+=======
+});
+>>>>>>> master
+
 function initMap() {
     var styleArray = [
         {
@@ -54,18 +69,21 @@ function initMap() {
         map: map,
         title: 'PGS Software'
     });
+
 }
 
-
-//Set slider height
 function setSliderHeight() {
     var slideImgFirst = $(".item").find("img");
     var mainSlideEl = $(".pgs-second");
 
     mainSlideEl.height(slideImgFirst[0].height);
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
 }
 
-//Set slider height onLoad
+
 function setHeightOnLoad() {
 
     setSliderHeight();
@@ -86,7 +104,6 @@ var resizeFunction = debounce(function () {
 }, 250);
 
 
-//Function optimization of browser/resize
 function debounce(func, wait, immediate) {
     var timeout;
     return function () {

@@ -150,6 +150,7 @@
     </section>
 
     <section class="row last-section">
+<<<<<<< HEAD
         <div class="col-xs-12">
             <!-- Zakładki -->
             <ul class="nav nav-tabs" role="tablist">
@@ -165,10 +166,13 @@
                         <h2><a href="#">BlazRobar.com</a></h2>
                     </div>
                     <div class="col-md-6 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate dolor
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                            dolor
                             eaque
-                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur totam
-                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius fugit
+                            eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint
+                            tenetur totam
+                            voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea
+                            eius fugit
                             ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita
                             fugit
                             molestias
@@ -199,6 +203,56 @@
                             tenetur totam
                             voluptas voluptatum.</p>
                     </div>
+=======
+        <!-- Zakładki -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#1zakladka" role="tab" data-toggle="tab">1 Tabs</a></li>
+            <li><a href="#2zakladka" role="tab" data-toggle="tab">2 Tabs</a></li>
+            <li><a href="#3zakladka" role="tab" data-toggle="tab">3 Tabs</a></li>
+            <li><a href="#4zakladka" role="tab" data-toggle="tab">4 Tabs</a></li>
+        </ul>
+        <!-- Zawartość zakładek -->
+        <div class="tab-content">
+            <div class="tab-pane active" id="1zakladka">
+                <div class="col-xs-12">
+                    <h2><a href="#">BlazRobar.com</a></h2>
+                </div>
+                <div class="col-md-6 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum.</p>
+                </div>
+                <div class="col-md-6 col-xs-12 hidden-xs">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum.</p>
+>>>>>>> master
                 </div>
                 <div class="tab-pane" id="2zakladka">
                     <div class="col-xs-12">
@@ -211,14 +265,12 @@
                             eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint
                             tenetur totam
                             voluptas voluptatum. Lorem ips dignissimos dolorem doloremque expedita fugit
-                        fugit
                             molestias
                             quo reprehenderit, repudiandae velit veniam!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
                             dolor
                             eaque
                             eiatur quas repudiandae sapiente sint tenetur totam
-                        totam
                             voluptas voluptatum.</p>
                     </div>
                     <div class="col-md-6 col-xs-12 hidden-xs">
@@ -241,6 +293,7 @@
                             voluptas voluptatum.</p>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <div class="tab-pane" id="3zakladka">
                     <div class="col-xs-12">
                         <h2><a href="#">Third Tabs</a></h2>
@@ -282,6 +335,43 @@
                             molestias
                             quo reprehenderit, repudiandae velit veniam!</p>
                     </div>
+=======
+                <div class="col-md-6 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum.</p>
+                </div>
+                <div class="col-md-6 col-xs-12 hidden-xs">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum.</p>
+>>>>>>> master
                 </div>
             </div>
         </div>
@@ -298,12 +388,32 @@
                         <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" minlength="5" required>
                     </div>
                 </div>
+<<<<<<< HEAD
 
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
                         <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="" required>
                     </div>
+=======
+                <div class="col-md-13 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum.</p>
+>>>>>>> master
                 </div>
 
                 <div class="form-group">
@@ -312,11 +422,25 @@
                         <textarea class="form-control" rows="3" name="message" required></textarea>
                     </div>
                 </div>
+<<<<<<< HEAD
 
                 <div class="form-group">
                     <div class="col-sm-10 col-sm-offset-2">
                         <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
                     </div>
+=======
+                <div class="col-md-13 col-xs-12">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                        dolor
+                        eaque
+                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur
+                        totam
+                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius
+                        fugit
+                        ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita fugit
+                        molestias
+                        quo reprehenderit, repudiandae velit veniam!</p>
+>>>>>>> master
                 </div>
 
             </form>
@@ -330,7 +454,10 @@
 
 </div>
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
 <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
 <script src="node_modules/jquery-validation/dist/localization/messages_pl.js"></script>
