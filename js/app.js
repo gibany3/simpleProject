@@ -1,10 +1,23 @@
 $(document).ready(function () {
     setHeightOnLoad();
     addition();
+    $(window).resize(resizeFunction);
 
     //Validate form
     $("#commentForm").validate({
-
+        rules: {
+            name: {
+                required: true,
+                minlength: 5
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true
+            }
+        }
     });
 
     //lightbox option
@@ -21,20 +34,20 @@ function initMap() {
         {
             featureType: "all",
             stylers: [
-                { saturation: -80 }
+                {saturation: -80}
             ]
-        },{
+        }, {
             featureType: "road.arterial",
             elementType: "geometry",
             stylers: [
-                { hue: "#00ffee" },
-                { saturation: 50 }
+                {hue: "#00ffee"},
+                {saturation: 50}
             ]
-        },{
+        }, {
             featureType: "poi.business",
             elementType: "labels",
             stylers: [
-                { visibility: "off" }
+                {visibility: "off"}
             ]
         }
     ];
