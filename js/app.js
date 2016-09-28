@@ -1,6 +1,7 @@
 $(document).ready(function () {
     setHeightOnLoad();
     addition();
+    fbSlide();
     $(window).resize(resizeFunction);
 
     //Validate form
@@ -26,6 +27,52 @@ $(document).ready(function () {
     });
 
 });
+
+//Fb Page Plugin
+function fbSlide() {
+
+    var btnFb = $('a.btn-facebook');
+    var contentFb = $('.slideFb');
+    var fbClicked = false;
+
+    btnFb.on('click', function () {
+        contentFb.toggleClass('animateFb')
+        fbClicked = true;
+    })
+
+    $('body').on('click', function () {
+
+        if (!fbClicked) {
+            contentFb.removeClass('animateFb')
+        }
+        fbClicked = false;
+
+    })
+
+    //show and hide Fb Page Plugin
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll < 400) {
+
+            btnFb.fadeOut()
+
+        } else {
+
+            btnFb.fadeIn()
+        }
+    });
+
+    //Set width Fb Page Plugin
+        if ($(window).width() < 640 && $(window).width() > 320) {
+            contentFb.children().eq(0).attr('data-width', 300)
+        } else if ($(window).width() < 320) {
+            contentFb.children().eq(0).attr('data-width', 250)
+        } else {
+            contentFb.children().eq(0).attr('data-width', 340)
+        }
+
+}
 
 
 //GoogleMaps

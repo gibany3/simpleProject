@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-social/node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"
             integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
@@ -165,10 +167,13 @@
                         <h2><a href="#">BlazRobar.com</a></h2>
                     </div>
                     <div class="col-md-6 col-xs-12">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate dolor
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
+                            dolor
                             eaque
-                        eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint tenetur totam
-                        voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea eius fugit
+                            eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint
+                            tenetur totam
+                            voluptas voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea
+                            eius fugit
                             ipsa suscipit totam ut! Aliquid, delectus dicta dignissimos dolorem doloremque expedita
                             fugit
                             molestias
@@ -211,14 +216,14 @@
                             eius error fugit laboriosam, laudantium magni pariatur quas repudiandae sapiente sint
                             tenetur totam
                             voluptas voluptatum. Lorem ips dignissimos dolorem doloremque expedita fugit
-                        fugit
+                            fugit
                             molestias
                             quo reprehenderit, repudiandae velit veniam!</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto at autem cupiditate
                             dolor
                             eaque
                             eiatur quas repudiandae sapiente sint tenetur totam
-                        totam
+                            totam
                             voluptas voluptatum.</p>
                     </div>
                     <div class="col-md-6 col-xs-12 hidden-xs">
@@ -291,6 +296,34 @@
         <div class="col-xs-11 col-sm-10 col-md-6">
             <form class="form-horizontal" id="commentForm">
 
+                <div class="slideFb">
+                    <div class="fb-page"
+                         data-href="https://www.facebook.com/pgs.software/?fref=ts"
+                         data-tabs="timeline" data-small-header="true"
+                         data-adapt-container-width="false"
+                         data-hide-cover="false"
+                         data-height="400"
+                         data-width="340"
+                         data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/pgs.software/?fref=ts" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/pgs.software/?fref=ts">PGS Software S.A.</a></blockquote>
+                    </div>
+
+                    <a class="btn btn-social-icon btn-lg btn-facebook">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+                </div>
+
+
+                <div id="pop-slap" style="display: none" data-hello-text="Bądź na bieżąco, polub nas na Facebook.com"
+                     data-close-text="Dziękuję, już lubię tę stronę." data-timeout="5" data-demo="false">
+                    <script type="text/javascript"
+                            src="http://webfrik.pl/script/popup-fb?fb_url=https://www.facebook.com/pgs.software/?fref=ts&amp;fb_theme=light"></script>
+                    <a href="https://sklep.altanka.com.pl/6-domki-ogrodowe" title="domki narzędziowe">domki
+                        narzędziowe</a></div>
+
+                <!--<div id="facebook_slider_widget" style="display: none"><script type="text/javascript" src="http://webfrik.pl/widget/facebook_slider.html?fb_url=https://www.facebook.com/pgs.software/?fref=ts&amp;fb_width=290&amp;fb_height=300&amp;fb_faces=true&amp;fb_stream=true&amp;fb_header=true&amp;fb_border=true&amp;fb_theme=light&amp;chx=787&amp;speed=SLOW&amp;fb_pic=sign&amp;position=LEFT"></script></div>-->
+
                 <div class="form-group">
                     <h1 class="text-center">Contact us</h1>
                     <label for="name" class="col-sm-2 control-label">Name</label>
@@ -302,7 +335,8 @@
                 <div class="form-group">
                     <label for="email" class="col-sm-2 control-label">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com">
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="example@domain.com">
                     </div>
                 </div>
 
@@ -332,6 +366,16 @@
 </div>
 
 
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 <script src="node_modules/lightbox2/src/js/lightbox.js"></script>
 <script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
 <script src="node_modules/jquery-validation/dist/localization/messages_pl.js"></script>

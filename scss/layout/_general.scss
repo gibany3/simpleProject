@@ -231,3 +231,25 @@ label.error {
   @include error;
 }
 
+.slideFb {
+  position: fixed;
+  left: 0;
+  margin-left: -340px;
+  transition: all 0.9s ease;
+  top: 10%;
+  z-index: 99999;
+  @include breakpoint(sm) {
+    margin-left: -299px;
+  }
+  @include breakpoint(xs) {
+    margin-left: -249px;
+  }
+  a.btn {
+    position: absolute;
+    top: 73px;
+    right: -44px;
+  }
+}
+.animateFb {
+  margin-left: 0;
+}
