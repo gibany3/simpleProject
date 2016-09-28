@@ -50,7 +50,7 @@ function fbSlide() {
     })
 
     //show and hide Fb Page Plugin
-    $(window).scroll(function () {
+    function showAndHide() {
         var scroll = $(window).scrollTop();
 
         if (scroll < 400) {
@@ -61,6 +61,10 @@ function fbSlide() {
 
             btnFb.fadeIn()
         }
+    }
+    showAndHide();
+    $(window).scroll(function () {
+        showAndHide();
     });
 
     //Set width Fb Page Plugin
