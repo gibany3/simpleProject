@@ -3,6 +3,7 @@ $(document).ready(function () {
     addition();
     fbSlide();
     $(window).resize(resizeFunction);
+    jQuery.fn.cookiesEU();
 
     //Validate form
     $("#commentForm").validate({
@@ -26,7 +27,21 @@ $(document).ready(function () {
         'wrapAround': true
     });
 
-});
+
+    //Fb Page Plugin
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.7";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+
+});z
+
+
 
 //Fb Page Plugin
 function fbSlide() {
@@ -70,10 +85,13 @@ function fbSlide() {
     //Set width Fb Page Plugin
         if ($(window).width() < 640 && $(window).width() > 320) {
             contentFb.children().eq(0).attr('data-width', 300)
+
         } else if ($(window).width() < 320) {
             contentFb.children().eq(0).attr('data-width', 250)
+
         } else {
             contentFb.children().eq(0).attr('data-width', 340)
+
         }
 
 }

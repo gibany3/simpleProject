@@ -253,3 +253,13 @@ label.error {
 .animateFb {
   margin-left: 0;
 }
+
+#cookiesEU-box {
+  position: fixed !important;
+  a {
+    color: #0088cc;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

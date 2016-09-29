@@ -8007,4 +8007,16 @@ label.error {
   margin-left: 0;
 }
 
+#cookiesEU-box {
+  position: fixed !important;
+}
+
+#cookiesEU-box a {
+  color: #0088cc;
+}
+
+#cookiesEU-box a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
