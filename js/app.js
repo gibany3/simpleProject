@@ -109,10 +109,10 @@ function fbSlide() {
     });
 
     //Set width Fb Page Plugin
-        if ($(window).width() < 640 && $(window).width() > 320) {
+        if ($(window).width() <= 640 && $(window).width() > 320) {
             contentFb.children().eq(0).attr('data-width', 300)
 
-        } else if ($(window).width() < 320) {
+        } else if ($(window).width() <= 320) {
             contentFb.children().eq(0).attr('data-width', 250)
 
         } else {
