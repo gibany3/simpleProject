@@ -9,7 +9,7 @@ html {
   @include breakpoint(sm) {
     font-size: 6px;
   }
-  @include breakpoint(sm) {
+  @include breakpoint(xs) {
     font-size: 4px;
   }
 }
@@ -250,6 +250,7 @@ label.error {
     right: -44px;
   }
 }
+
 .animateFb {
   margin-left: 0;
 }
@@ -261,5 +262,25 @@ label.error {
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.cookieDisplay {
+  float: right;
+  padding: 11px 0;
+  margin-right: 40px;
+  @include breakpoint(md) {
+    margin-right: 5px;
+  }
+  @include breakpoint(sm) {
+    position: absolute;
+    right: 80px;
+  }
+  span {
+    color: #fff;
+    font-size: 1.7rem;
+    display: block;
+    margin: 10px 0;
+    box-sizing: border-box;
   }
 }

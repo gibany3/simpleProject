@@ -7704,7 +7704,7 @@ html {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 320px) {
   html {
     font-size: 4px;
   }
@@ -8017,6 +8017,33 @@ label.error {
 
 #cookiesEU-box a:hover {
   text-decoration: underline;
+}
+
+.cookieDisplay {
+  float: right;
+  padding: 11px 0;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 980px) {
+  .cookieDisplay {
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .cookieDisplay {
+    position: absolute;
+    right: 80px;
+  }
+}
+
+.cookieDisplay span {
+  color: #fff;
+  font-size: 1.7rem;
+  display: block;
+  margin: 10px 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

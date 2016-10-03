@@ -39,7 +39,33 @@ $(document).ready(function () {
     }(document, 'script', 'facebook-jssdk'));
 
 
-});z
+});
+
+//Add cookies
+var nameInput = $("#name");
+var emailInput = $("#email");
+var submitButton = $("#submitButton");
+var nameDisplayCookie = $("#nameCookie");
+var emailDisplayCookie = $("#emailCookie");
+
+submitButton.click(function(e) {
+
+    e.preventDefault();
+    Storages.cookieStorage.set('UserNameCookie', nameInput.val());
+    Storages.cookieStorage.set('UserEmailCookie', emailInput.val());
+
+    nameDisplayCookie.text('Name: ' + Storages.cookieStorage.get('UserNameCookie'));
+    emailDisplayCookie.text('Email: ' + Storages.cookieStorage.get('UserEmailCookie'));
+
+    Storages.localStorage.set('UserNameLocal', nameInput.val());
+    Storages.localStorage.set('UserEmailLocal', emailInput.val());
+
+    Storages.sessionStorage.set('UserNameSession', nameInput.val());
+    Storages.sessionStorage.set('UserEmailSession', emailInput.val());
+
+    console.log(nameInput.val());
+    console.log(emailInput.val());
+});
 
 
 
@@ -83,10 +109,10 @@ function fbSlide() {
     });
 
     //Set width Fb Page Plugin
-        if ($(window).width() < 640 && $(window).width() > 320) {
+        if ($(window).width() <= 640 && $(window).width() > 320) {
             contentFb.children().eq(0).attr('data-width', 300)
 
-        } else if ($(window).width() < 320) {
+        } else if ($(window).width() <= 320) {
             contentFb.children().eq(0).attr('data-width', 250)
 
         } else {
@@ -242,5 +268,3 @@ function addition() {
 // };
 //
 // $(document).ready(function() { myFeature.init(); });
-
-
