@@ -41,6 +41,24 @@ $(document).ready(function () {
 
 });
 
+// Ajax request
+var searchInput = $('.infoDisplay').find('input');
+var searchBtn = $('.searchBtn');
+
+searchBtn.click(function(e) {
+    e.preventDefault();
+    $.ajax({
+        dataType: 'jsonp',
+        url: 'https://itunes.apple.com/lookup?id=909253'
+    }).done(function(response){
+        console.log(response.results[0].artistName);
+        //console.log("Success");
+    }).fail(function(error) {
+        console.log(error)
+    })
+});
+
+
 //Add cookies
 var nameInput = $("#name");
 var emailInput = $("#email");
@@ -48,14 +66,16 @@ var submitButton = $("#submitButton");
 var nameDisplayCookie = $("#nameCookie");
 var emailDisplayCookie = $("#emailCookie");
 
-submitButton.click(function(e) {
+function displayNameAndEmail() {
+    nameDisplayCookie.text('Name: ' + Storages.sessionStorage.get('UserNameSession'));
+    emailDisplayCookie.text('Email: ' + Storages.sessionStorage.get('UserEmailSession'));
+}
+
+submitButton.click(function (e) {
 
     e.preventDefault();
     Storages.cookieStorage.set('UserNameCookie', nameInput.val());
     Storages.cookieStorage.set('UserEmailCookie', emailInput.val());
-
-    nameDisplayCookie.text('Name: ' + Storages.cookieStorage.get('UserNameCookie'));
-    emailDisplayCookie.text('Email: ' + Storages.cookieStorage.get('UserEmailCookie'));
 
     Storages.localStorage.set('UserNameLocal', nameInput.val());
     Storages.localStorage.set('UserEmailLocal', emailInput.val());
@@ -63,10 +83,12 @@ submitButton.click(function(e) {
     Storages.sessionStorage.set('UserNameSession', nameInput.val());
     Storages.sessionStorage.set('UserEmailSession', emailInput.val());
 
+    displayNameAndEmail();
+
     console.log(nameInput.val());
     console.log(emailInput.val());
 });
-
+displayNameAndEmail();
 
 
 //Fb Page Plugin
@@ -103,22 +125,23 @@ function fbSlide() {
             btnFb.fadeIn()
         }
     }
+
     showAndHide();
     $(window).scroll(function () {
         showAndHide();
     });
 
     //Set width Fb Page Plugin
-        if ($(window).width() <= 640 && $(window).width() > 320) {
-            contentFb.children().eq(0).attr('data-width', 300)
+    if ($(window).width() <= 640 && $(window).width() > 320) {
+        contentFb.children().eq(0).attr('data-width', 300)
 
-        } else if ($(window).width() <= 320) {
-            contentFb.children().eq(0).attr('data-width', 250)
+    } else if ($(window).width() <= 320) {
+        contentFb.children().eq(0).attr('data-width', 250)
 
-        } else {
-            contentFb.children().eq(0).attr('data-width', 340)
+    } else {
+        contentFb.children().eq(0).attr('data-width', 340)
 
-        }
+    }
 
 }
 
@@ -189,7 +212,6 @@ function setHeightOnLoad() {
 }
 
 var resizeFunction = debounce(function () {
-    // All the taxing stuff you do
     setHeightOnLoad();
 }, 250);
 

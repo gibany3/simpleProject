@@ -8046,4 +8046,30 @@ label.error {
   box-sizing: border-box;
 }
 
+.iTunesInfo {
+  background-color: #f9f9f9;
+}
+
+.iTunesInfo h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 5px 0;
+  width: 50%;
+  display: inline-block;
+}
+
+.iTunesInfo .infoDisplay {
+  width: 60%;
+  min-height: 200px;
+  background-color: rgba(202, 255, 79, 0.24);
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.iTunesInfo .searchBtn {
+  display: block;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
