@@ -42,20 +42,29 @@ $(document).ready(function () {
 });
 
 // Ajax request
-var searchInput = $('.infoDisplay').find('input');
-var searchBtn = $('.searchBtn');
 
-searchBtn.click(function(e) {
+var searchBtn = $('.searchBtn');
+var insertElement = $('.insertElement');
+
+searchBtn.click(function (e) {
     e.preventDefault();
+
+    var searchInput = $('.infoDisplay').find('input').val();
     $.ajax({
         dataType: 'jsonp',
-        url: 'https://itunes.apple.com/lookup?id=909253'
-    }).done(function(response){
-        console.log(response.results[0].artistName);
-        //console.log("Success");
-    }).fail(function(error) {
+        url: 'https://itunes.apple.com/search?term='+searchInput
+    }).done(function (response) {
+        insertElement.css('display', 'block');
+        $('#artistName').text(response.results[0].artistName);
+        $('#imgFace').attr('src', response.results[0].artworkUrl100);
+        $('#kindMusic').text(response.results[0].primaryGenreName);
+        $('#urlWeb').attr('href', response.results[0].trackViewUrl);
+        $('#price').text(response.results[0].collectionPrice);
+
+        console.log(response.results[0]);
+    }).fail(function (error) {
         console.log(error)
-    })
+    });
 });
 
 
