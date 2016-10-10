@@ -284,3 +284,70 @@ label.error {
     box-sizing: border-box;
   }
 }
+.iTunesInfo {
+  background-color: #f9f9f9;
+  h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 5px 0;
+    width: 50%;
+    display: inline-block;
+  }
+  .infoDisplay {
+    width: 60%;
+    background-color: rgba(202, 255, 79, 0.24);
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .searchBtn {
+    display: inline-block;
+    margin: 0 30px;
+  }
+  .insertElement {
+    border: 1px solid black;
+    width: 50%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 200px;
+    margin-top: 40px;
+    background-color: rgba(208, 255, 191, 0.68);
+    display: none;
+    p:nth-child(1) {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 3rem;
+      span {
+        font-weight: 700;
+        display: block;
+      }
+    }
+    figure {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+    }
+    p:nth-of-type(2) {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      a {
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+          color: #a3a3a3;
+        }
+      }
+    }
+    p:nth-of-type(3) {
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      font-size: 3rem;
+      color: #ffd700;
+    }
+  }
+}
